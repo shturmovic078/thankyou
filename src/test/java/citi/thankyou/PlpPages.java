@@ -16,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
@@ -118,11 +119,22 @@ public class PlpPages {
 		        	 driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        	  driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
-		        
-				        name=""+ counter + "_" + "desktop.png";
+		        	  driver.manage().window().setSize(new Dimension(320,1156));
+				        name=""+ counter + "_" + "320x568.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
-				       
+				        driver.manage().window().setSize(new Dimension(320,568));
+				        name=""+ counter + "_" + "320x568.png";
+				        takeScreenPortrait(name);
+				        System.out.println("Image Name " +name);
+				        driver.manage().window().setSize(new Dimension(930,1156));
+				        name=""+ counter + "_" + "930x1156.png";
+				        takeScreenPortrait(name);
+				        System.out.println("Image Name " +name);
+				        driver.manage().window().setSize(new Dimension(1200,1400));
+				        name=""+ counter + "_" + "1200x1400.png";
+				        takeScreenPortrait(name);
+				        System.out.println("Image Name " +name);
 				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				       
 				    
@@ -256,4 +268,3 @@ public class PlpPages {
 	 }
 
 }
-

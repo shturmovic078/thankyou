@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Citi" duration-ms="111699" started-at="2016-05-31T19:56:02Z" finished-at="2016-05-31T19:57:54Z">
+  <suite name="Desktop Screenshots" duration-ms="43111" started-at="2016-05-31T21:26:55Z" finished-at="2016-05-31T21:27:38Z">
     <groups>
       <group name="create">
-        <method signature="PlpPages.beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="beforeClass" class="citi.thankyou.PlpPages"/>
+        <method signature="PlpPages.beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="beforeClass" class="citi.thankyou.PlpPages"/>
       </group> <!-- create -->
     </groups>
-    <test name="Citi Screenshots" duration-ms="111699" started-at="2016-05-31T19:56:02Z" finished-at="2016-05-31T19:57:54Z">
+    <test name="Desktop Windows 7 Firefox 46" duration-ms="43111" started-at="2016-05-31T21:26:55Z" finished-at="2016-05-31T21:27:38Z">
       <class name="citi.thankyou.PlpPages">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="beforeTest" is-config="true" duration-ms="8" started-at="2016-05-31T15:56:02Z" finished-at="2016-05-31T15:56:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="beforeClass" is-config="true" duration-ms="55788" started-at="2016-05-31T15:56:02Z" finished-at="2016-05-31T15:56:58Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="beforeClass" duration-ms="43100" started-at="2016-05-31T17:26:55Z" finished-at="2016-05-31T17:27:38Z">
           <params>
             <param index="0">
               <value>
@@ -25,52 +21,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="beforeClass" duration-ms="55890" started-at="2016-05-31T15:56:58Z" finished-at="2016-05-31T15:57:54Z">
+        <test-method status="PASS" signature="afterMethod_takeScreenshot(org.testng.ITestResult)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="afterMethod_takeScreenshot" is-config="true" duration-ms="0" started-at="2016-05-31T17:27:38Z" description="take screenshot on fails" finished-at="2016-05-31T17:27:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefoxMAC]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterMethod_takeScreenshot(org.testng.ITestResult)[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="afterMethod_takeScreenshot" is-config="true" duration-ms="0" started-at="2016-05-31T15:57:54Z" description="take screenshot on fails" finished-at="2016-05-31T15:57:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=beforeClass status=SUCCESS method=PlpPages.beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@6276ae34] output={null}]]]>
+                <![CDATA[[TestResult name=beforeClass status=SUCCESS method=PlpPages.beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@3c09711b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod_takeScreenshot -->
-        <test-method status="PASS" signature="f()[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="f" duration-ms="0" started-at="2016-05-31T15:57:54Z" finished-at="2016-05-31T15:57:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod_takeScreenshot(org.testng.ITestResult)[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="afterMethod_takeScreenshot" is-config="true" duration-ms="0" started-at="2016-05-31T15:57:54Z" description="take screenshot on fails" finished-at="2016-05-31T15:57:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=f status=SUCCESS method=PlpPages.f()[pri:0, instance:citi.thankyou.PlpPages@6276ae34] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod_takeScreenshot -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-05-31T15:57:54Z" finished-at="2016-05-31T15:57:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:citi.thankyou.PlpPages@6276ae34]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-05-31T15:57:54Z" finished-at="2016-05-31T15:57:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
       </class> <!-- citi.thankyou.PlpPages -->
-    </test> <!-- Citi Screenshots -->
-  </suite> <!-- Citi -->
+    </test> <!-- Desktop Windows 7 Firefox 46 -->
+  </suite> <!-- Desktop Screenshots -->
 </testng-results>

@@ -1,21 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
-<suite name="Citi">
-   <test name="Citi Screenshots">
-   
-      <parameter name="browser" value="firefoxMAC"/> 
-      
-      <classes>
-         <class name="citi.thankyou.PlpPages" />
-      </classes>
-      
-   </test>
-   
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="Desktop Screenshots" verbose="1">
+    <parameter name="param" value="Test"/>
+    
+    
+    
+     
+        
+    
+    <test name="Desktop Windows 7 Firefox 46">
+        <parameter name="browser" value="firefoxMAC"/>
+        <classes>
+            <class name="citi.thankyou.PlpPages"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
     
    
-   
-   
-   
-  
+    
+    
 </suite>
