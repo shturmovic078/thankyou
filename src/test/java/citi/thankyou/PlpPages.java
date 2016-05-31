@@ -120,15 +120,15 @@ public class PlpPages {
 		        	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        	  driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        	  driver.manage().window().setSize(new Dimension(320,1156));
-				        name=data + "/320/" + counter + "_" + "320x568.png";
+				        name=local + "/320/" + counter + "_" + "320x568.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(320,568));
-				        name=data + "/930/" + "_" + counter + "930x1156.png";
+				        name=local + "/930/" + "_" + counter + "930x1156.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(930,1156));
-				        name=data + "/1200/" + "_" + counter + "1200x1400.png";
+				        name=local + "/1200/" + "_" + counter + "1200x1400.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(1200,1400));
