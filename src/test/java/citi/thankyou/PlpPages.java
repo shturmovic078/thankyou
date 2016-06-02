@@ -113,7 +113,7 @@ public class PlpPages {
 		        System.out.println("The URL is " + url);	
 		        System.out.println("Image Name " +name);
 		        counter+=1;
-		        if (url.toLowerCase().contains(brand))
+		        if (url.toLowerCase().endsWith(brand))
 		        {
 		        	 driver.get(url);
 		        	 System.out.println("Found matching url # " +url.toLowerCase() + "and " + brand);
