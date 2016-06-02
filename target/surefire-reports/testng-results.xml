@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Desktop Screenshots" duration-ms="43111" started-at="2016-05-31T21:26:55Z" finished-at="2016-05-31T21:27:38Z">
+  <suite name="Desktop Screenshots" duration-ms="43218" started-at="2016-06-02T21:19:35Z" finished-at="2016-06-02T21:20:18Z">
     <groups>
       <group name="create">
         <method signature="PlpPages.beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="beforeClass" class="citi.thankyou.PlpPages"/>
       </group> <!-- create -->
     </groups>
-    <test name="Desktop Windows 7 Firefox 46" duration-ms="43111" started-at="2016-05-31T21:26:55Z" finished-at="2016-05-31T21:27:38Z">
+    <test name="Desktop Windows 7 Firefox 46" duration-ms="43218" started-at="2016-06-02T21:19:35Z" finished-at="2016-06-02T21:20:18Z">
       <class name="citi.thankyou.PlpPages">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="beforeClass" duration-ms="43100" started-at="2016-05-31T17:26:55Z" finished-at="2016-05-31T17:27:38Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="beforeClass" duration-ms="43206" started-at="2016-06-02T17:19:35Z" finished-at="2016-06-02T17:20:18Z">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="afterMethod_takeScreenshot(org.testng.ITestResult)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="afterMethod_takeScreenshot" is-config="true" duration-ms="0" started-at="2016-05-31T17:27:38Z" description="take screenshot on fails" finished-at="2016-05-31T17:27:38Z">
+        <test-method status="PASS" signature="afterMethod_takeScreenshot(org.testng.ITestResult)[pri:0, instance:citi.thankyou.PlpPages@3c09711b]" name="afterMethod_takeScreenshot" is-config="true" duration-ms="0" started-at="2016-06-02T17:20:18Z" description="take screenshot on fails" finished-at="2016-06-02T17:20:18Z">
           <params>
             <param index="0">
               <value>
