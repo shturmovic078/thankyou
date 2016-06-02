@@ -104,7 +104,7 @@ public class PlpPages {
 		    brand = System.getProperty("Brand");
 		    while ((line = br.readLine()) != null) {
 			  	  
-		        System.out.println("The URL is " + counter);
+		        System.out.println("The URL I'm on " + counter);
 		        String [] nextLine = line.split(",");
 		        // nextLine[] is an array of values from the line
 		        System.out.println(nextLine[lineNumber]);
