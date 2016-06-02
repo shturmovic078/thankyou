@@ -83,7 +83,7 @@ public class PlpPages {
 		  String name=""+ browser+"/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture.png";
 		 
 			  System.out.println("Let me see which one get tested " +browser);
-			  System.out.println("Image Name " +name);
+			  System.out.println("Image while loading a browser is " +name);
 
 			  
 		 
@@ -112,8 +112,9 @@ public class PlpPages {
 		        driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        System.out.println("The URL is " + url);	
 		        System.out.println("Image Name " +name);
+		        System.out.println("Brand is " +name);
 		        counter+=1;
-		        if (url.toLowerCase().endsWith(brand))
+		        if (url.toLowerCase().endsWith(brand.toLowerCase()))
 		        {
 		        	 driver.get(url);
 		        	 System.out.println("Found matching url # " +url.toLowerCase() + "and " + brand);
