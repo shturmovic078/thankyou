@@ -122,7 +122,7 @@ public class PlpPages {
 		        	  driver.manage().window().setSize(new Dimension(320,1156));
 		        	  WebDriverWait wait = new WebDriverWait(driver, 40);
 				        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("bluewave-header")));
-				        name=local + "/320/" + counter + "_" + "320x568.png";
+				        name=local + "/" + counter + "_" + "320x568.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(320,568));
@@ -131,13 +131,13 @@ public class PlpPages {
 				      element = wait.until(ExpectedConditions.elementToBeClickable(By.id("bluewave-header")));
 				        
 				        
-				        name=local + "/930/" + "_" + counter + "930x1156.png";
+				        name=local + "/" + "_" + counter + "930x1156.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(930,1156));
 				        
 				        element = wait.until(ExpectedConditions.elementToBeClickable(By.id("bluewave-header")));
-				        name=local + "/1200/" + "_" + counter + "1200x1400.png";
+				        name=local + "/" + "_" + counter + "1200x1400.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(1200,1400));
