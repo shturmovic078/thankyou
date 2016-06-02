@@ -45,7 +45,7 @@ import org.testng.annotations.Test;
 
 public class PlpPages {
 	private static WebDriver driver;
-	 
+
 	 public static final String USERNAME = "zaqwsx1";
 	  public static final String AUTOMATE_KEY = "Fs54nwmULt7BaSTosZxi";
 	  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
@@ -120,14 +120,23 @@ public class PlpPages {
 		        	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        	  driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        	  driver.manage().window().setSize(new Dimension(320,1156));
+		        	  WebDriverWait wait = new WebDriverWait(driver, 40);
+				        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("bluewave-header")));
 				        name=local + "/320/" + counter + "_" + "320x568.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(320,568));
+				        
+				   
+				      element = wait.until(ExpectedConditions.elementToBeClickable(By.id("bluewave-header")));
+				        
+				        
 				        name=local + "/930/" + "_" + counter + "930x1156.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
 				        driver.manage().window().setSize(new Dimension(930,1156));
+				        
+				        element = wait.until(ExpectedConditions.elementToBeClickable(By.id("bluewave-header")));
 				        name=local + "/1200/" + "_" + counter + "1200x1400.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
