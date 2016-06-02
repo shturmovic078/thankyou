@@ -96,7 +96,7 @@ public class PlpPages {
 		    BufferedReader br =null;
 		    String line="";
 		    String ext = "png";
-		    File dir = new File("/users/agolubev1/Desktop/RondAndroid");
+		    File dir = new File("/users/agolubev1/Desktop/RondAndroid1");
 		
 		    int lineNumber = 0;
 
