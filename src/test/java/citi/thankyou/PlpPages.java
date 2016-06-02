@@ -116,6 +116,7 @@ public class PlpPages {
 		        if (url.toLowerCase().endsWith(brand))
 		        {
 		        	 driver.get(url);
+		        	 System.out.println("Found matching url # " +url.toLowerCase() + "and " + brand);
 		        	 driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		        	  driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
