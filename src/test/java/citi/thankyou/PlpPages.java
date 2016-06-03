@@ -154,6 +154,10 @@ public class PlpPages {
 				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				        
 				        driver.findElement(By.cssSelector("a.quickview-label")).click();
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				        name=local + "/320/" + "_" + counter + "quickview_966x1156.png";
 				        takeScreenPortrait(name);
