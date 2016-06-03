@@ -61,6 +61,7 @@ public class PlpPages {
 		String data="" + local + "/" + "url.csv";	
 		String myTitle,brand;
 		String csvFileToRead;
+		String document ="QUICK VIEW";
 		String slide1 = "Today's Fresh Fish";
 	    String safe = "https://10.10.10.34:8080/job/TESTNG3/ws/PageLoads1";
 	  @Test(groups = {"create"})
@@ -130,12 +131,32 @@ public class PlpPages {
 				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 				        
 				        
-				        name=local + "/320/" + "_" + counter + "930x1156.png";
-				        takeScreenPortrait(name);
+				        name=local + "/320/" + "_" + counter + "966x1156.png";
+				       
 				        System.out.println("Image Name " +name);
-				        driver.manage().window().setSize(new Dimension(930,1156));
-				        
+				        driver.manage().window().setSize(new Dimension(966,1156));
 				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				        takeScreenPortrait(name);
+				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				        
+				        WebElement element = driver.findElement(By.cssSelector("a[class='product-quickview']"));
+				       // WebElement element = driver.findElement(By.xpath(".//*[@id='oc-container']"));
+				        Actions action = new Actions(driver);
+				    
+				        
+				        action.moveToElement(element).perform();
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				        
+				        driver.findElement(By.cssSelector("a.quickview-label")).click();
+				        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+				        name=local + "/320/" + "_" + counter + "quickview_966x1156.png";
+				        takeScreenPortrait(name);
 				        name=local + "/320/" + "_" + counter + "1200x1400.png";
 				        takeScreenPortrait(name);
 				        System.out.println("Image Name " +name);
